@@ -18,7 +18,21 @@ namespace Aula_10_05_POO {
 
             }
 
-        public string cpf { set; get; } // propriedade sem declarar o atributo.
+        public string Cpf { set; get; } // propriedade sem declarar o atributo.
 
-        }
-    }
+
+        //construtor
+        public Cliente() { // construtor vazio
+            }
+
+        public Cliente(string nome) {
+            Nome = nome;
+            }
+        public Cliente(String nome, String cpf) {
+            Nome = nome;
+            Cpf = cpf;
+          
+            }
+
+        }// fim class
+    }// fim namespace

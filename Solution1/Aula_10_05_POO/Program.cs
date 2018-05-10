@@ -10,8 +10,8 @@ namespace Aula_10_05_POO {
             Cliente cli = new Cliente();
             cli.Nome = "Gogofredo"; // set
             String nomeCliente = cli.Nome; //get
-            cli.cpf = "12345678909";
-            string cpfCliente = cli.cpf;
+            cli.Cpf = "12345678909";
+            string cpfCliente = cli.Cpf;
 
             Console.WriteLine(" CPF: " + cpfCliente);
             Console.ReadKey();
