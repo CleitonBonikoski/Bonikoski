@@ -1,38 +1,17 @@
 ﻿using System;
 
 namespace Aula_10_05_POO {
-    class Cliente {
-        //Atributo
-        private string nome;
-        // public string cpf { set; get; }
+    class Cliente:Pessoa{
 
-        //Propriedade
-        public string Nome {
-            get {
-                return nome;
-                }
+        public Cliente(String nome):base(nome) {
 
-            set {
-                nome = value;
-                }
+            //manda para a base que extende o parâmetro; 
 
             }
-
-        public string Cpf { set; get; } // propriedade sem declarar o atributo.
-
-
-        //construtor
-        public Cliente() { // construtor vazio
+        public Cliente() {
+                
             }
 
-        public Cliente(string nome) {
-            Nome = nome;
-            }
-        public Cliente(String nome, String cpf) {
-            Nome = nome;
-            Cpf = cpf;
-          
-            }
 
         }// fim class
     }// fim namespace
