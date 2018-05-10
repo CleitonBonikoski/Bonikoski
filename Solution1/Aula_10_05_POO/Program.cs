@@ -28,6 +28,12 @@ namespace Aula_10_05_POO {
             // Classes Abstratas não podem ser instanciadas;
             //Pessoa p = new Pessoa();
 
+            cli.DataNasc = new DateTime(1998,12,09);
+
+
+            Console.WriteLine(" Data: " + cli.DataNasc);
+            Console.WriteLine(" Data Nascimento: " + cli.Idade);
+
             Console.ReadKey();
                 
                     
