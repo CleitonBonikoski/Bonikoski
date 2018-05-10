@@ -22,8 +22,11 @@ namespace Aula_10_05_POO {
             Pessoa cli2 = new Cliente("Jucicleia");// nome
             Console.WriteLine("Cli2 Nome: " + cli2.Nome);
 
-            //Pessoa cli3 = new Cliente("Jucileia", "12345678900");//nome + cpf
+            Pessoa cli3 = new Cliente("Jucileia", "12345678900");//nome + cpf
+            Console.WriteLine("Cli3 Nome: " + cli3.Nome);
 
+            // Classes Abstratas não podem ser instanciadas;
+            //Pessoa p = new Pessoa();
 
             Console.ReadKey();
                 

@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Aula_10_05_POO {
-    class Pessoa {
+    public abstract class Pessoa {
        
         //Atributo
         private string nome;
