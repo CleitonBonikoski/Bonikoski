@@ -9,6 +9,12 @@ namespace Aula1405_Interfaces {
 
         public int Velocidade { get; set; }
 
+        //chave para objeto Marca
+        public int MarcaID { get; set; }
+
+        //Propriedade de navegação
+        public virtual Marca_Marca { get; set; }
+
         public Carro() {
             Velocidade = 0;
             }
@@ -21,6 +27,7 @@ namespace Aula1405_Interfaces {
         public void Desacelerar() {
             Velocidade -= 5;
             }
+
         public string ImprimirInfo() {
             return "Carro, Velocidade: " + Velocidade;
             }
