@@ -19,6 +19,12 @@ namespace Aula_10_05_POO {
 
         public int Idade { get { return  DateTime.Today.Year - DataNasc.Year  ; }}
 
+        override 
+            public String ImprimirInfo() {
+            return Nome + " , " + DataNasc.ToShortDateString() + " , " + Cpf; 
+
+            }
+
 
 
         }// fim class

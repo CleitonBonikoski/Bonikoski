@@ -34,6 +34,13 @@ namespace Aula_10_05_POO {
             Console.WriteLine(" Data: " + cli.DataNasc);
             Console.WriteLine(" Data Nascimento: " + cli.Idade);
 
+
+            Console.WriteLine(" Dados cli : " + cli.ImprimirInfo());
+
+
+
+
+
             Console.ReadKey();
                 
                     
