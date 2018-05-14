@@ -6,6 +6,7 @@
         void Desacelerar();
 
         string ImprimirInfo();
+        
 
 
 

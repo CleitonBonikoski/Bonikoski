@@ -33,8 +33,7 @@ namespace Aula1405_Interfaces {
             Console.WriteLine(" Veiculo : " + car.ImprimirInfo());
             Console.WriteLine(" Veiculo : " + bus.ImprimirInfo());
 
-
-
+        
             Console.ReadKey();
 
 
