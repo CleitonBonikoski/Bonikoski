@@ -15,5 +15,9 @@ namespace Aula1405_Interfaces {
         public void Desacelerar() {
             Velocidade -= 4;
             }
+
+        public string ImprimirInfo() {
+            return "Onibus, Velocidade: " + Velocidade;
+            }
         }
     }
