@@ -10,13 +10,21 @@ namespace Aula1405_Interfaces {
 
             Carro car = new Carro();
 
-            Console.WriteLine(" Velocidade Inicial : " +  car.Velocidade);
+            Console.WriteLine(" Velocidade Start Carro : " +  car.Velocidade);
 
             car.Acelerar();
             car.Acelerar();
             car.Desacelerar();
 
-            Console.WriteLine(" Velocidade Total: " + car.Velocidade);
+            Console.WriteLine(" Velocidade Total Carro : " + car.Velocidade);
+
+            Onibus bus = new Onibus();
+            Console.WriteLine(" Velocidade Start Onibus : " + bus.Velocidade);
+            bus.Acelerar();
+            bus.Acelerar();
+            Console.WriteLine(" Velocidade Aceleração Onibus : " + bus.Velocidade);
+            bus.Desacelerar();
+            Console.WriteLine(" Velocidade Final Onibus : " + bus.Velocidade);
 
             Console.ReadKey();
 
