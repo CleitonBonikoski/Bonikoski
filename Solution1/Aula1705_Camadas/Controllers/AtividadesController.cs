@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aula1705_Camadas.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,38 @@ namespace Aula1705_Camadas.Controllers
         public List<Atividade> ListaAtividades { get; set; }
 
 
+
+
+
         //Salvar
+        public void Salvar(Atividade atividade)
+        {
+            ListaAtividades.Add(atividade);
+        }
+
+
         //Listar
-        //Ler
+
+        public List<Atividade> Listar()
+        {
+            return ListaAtividades;
+        }
+
+        //BuscarPorID
+        public Atividade BuscarPorID(int id)
+        {
+            foreach (Atividade a in ListaAtividades)
+            {
+                if(a.AtividadeID == id)
+                {
+                    return a;
+                }
+                
+            }
+
+            return null;
+        }
+        
         //Editar
         //Excluir
 
