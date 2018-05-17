@@ -30,6 +30,8 @@ namespace Aula1705_Camadas.Controllers
             return ListaAtividades;
         }
 
+
+
         //BuscarPorID
         public Atividade BuscarPorID(int id)
         {
@@ -44,6 +46,9 @@ namespace Aula1705_Camadas.Controllers
 
             return null;
         }
+
+
+
         
         //Editar
         public void Editar(int id, Atividade atividadeAtualizada)
@@ -62,6 +67,21 @@ namespace Aula1705_Camadas.Controllers
 
 
         //Excluir
+        public void Excluir(int id)
+        {
+            Atividade atividade = BuscarPorID(id);
+            if(atividade != null)
+            {
+                ListaAtividades.Remove(atividade);
+            }
+        }
+
+
+
+
+
+
+
 
     }
 }
