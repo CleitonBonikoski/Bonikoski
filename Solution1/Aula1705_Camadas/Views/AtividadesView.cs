@@ -12,28 +12,75 @@ namespace Aula1705_Camadas.Views
     {
         public void ExibirMenu()
         {
-            Console.WriteLine("======================");
-            Console.WriteLine("Escolha uma Opção:");
-            Console.WriteLine("1 - Criar Atividade: ");
-            Console.WriteLine("2 - Listar Atividades: ");
-            Console.WriteLine("3 - Buscar Atividade: ");
-            Console.WriteLine("4 - Editar Atividade: ");
-            Console.WriteLine("5 - Excluir Atividade: ");
-            Console.WriteLine("======================");
+            int opcao = 9;
 
-            int opcao = int.Parse(Console.ReadLine());
-            
+            do
+            {
+
+
+                Console.Clear();
+                Console.WriteLine("======================");
+                Console.WriteLine("Escolha uma Opção:");
+                Console.WriteLine("1 - Criar Atividade: ");
+                Console.WriteLine("2 - Listar Atividades: ");
+                Console.WriteLine("3 - Buscar Atividade: ");
+                Console.WriteLine("4 - Editar Atividade: ");
+                Console.WriteLine("5 - Excluir Atividade: ");
+                Console.WriteLine("9 - Sair : ");
+                Console.WriteLine("======================");
+
+                opcao = int.Parse(Console.ReadLine());
+
+           
 
             switch (opcao)
             {
                 case 1:
                     CriarAtividade();
                     break;
-                default:
+
+                    case 2:
+                        ListarAtividades();
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+
+
+                    default:
                     break;
             }
 
+
+            } while (opcao != 9);
         }
+
+
+
+        private void ListarAtividades()
+        {
+            AtividadesController atividadeController = new AtividadesController();
+
+
+            Console.WriteLine(" Inicio da Lista");
+            foreach (Atividade atividade in atividadeController.Listar())
+            {
+                Console.WriteLine("---");
+                Console.WriteLine(" ID : " + atividade.AtividadeID);
+                Console.WriteLine(" Nome : " + atividade.Nome);
+                Console.WriteLine(" Ativo : " + atividade.Ativo);
+                Console.WriteLine("---");
+            }
+            Console.WriteLine(" Fim  da  Lista");
+            Console.ReadKey();
+
+        }
+
+
+
 
         public void CriarAtividade()
         {
