@@ -14,9 +14,15 @@ namespace Aula1705_Camadas.Controllers
   
 
         //Salvar
-        public void Salvar(Atividade atividade)
+       public void Salvar(Atividade atividade)
         {
-            atividade.AtividadeID = ListaAtividades.Count + 1;
+            int Id = 0;
+            foreach (Atividade ati in ListaAtividades)
+            {
+                Id = ati.AtividadeID;
+            }
+
+            atividade.AtividadeID = Id+1; 
             ListaAtividades.Add(atividade);
         }
 
