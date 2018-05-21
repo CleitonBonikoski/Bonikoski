@@ -1,0 +1,6 @@
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\bin\Debug\Aula1705_Camadas.exe.config
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\bin\Debug\Aula1705_Camadas.exe
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\bin\Debug\Aula1705_Camadas.pdb
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\obj\Debug\Aula1705_Camadas.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\obj\Debug\Aula1705_Camadas.exe
+C:\Users\Aluno\Source\Repos\CSharp\Solution1\Aula1705_Camadas\obj\Debug\Aula1705_Camadas.pdb
